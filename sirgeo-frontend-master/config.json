@@ -1,0 +1,281 @@
+{
+    "concessionarias" : {
+        "cApFernaoDias": {
+            "title": "AUTOPISTA FERNÃO DIAS"
+        },
+        "cApFluminense": {
+            "title": "AUTOPISTA FLUMINENSE"
+        },
+        "cApLitoralSul": {
+            "title": "AUTOPISTA LITORAL SUL"
+        },
+        "cApPlanaltoSul": {
+            "title": "AUTOPISTA PLANALTO SUL"
+        },
+        "cApRegisBittencourt": {
+            "title": "AUTOPISTA REGIS BITTENCOURT"
+        },
+        "cConcebra": {
+            "title": "CONCEBRA"
+        },
+        "cConcer": {
+            "title": "CONCER"
+        },
+        "cViaBrasil": {
+            "title": "CONCESSIONÁRIA VIA BRASIL BR-163"
+        },
+        "cCro": {
+            "title": "CRO"
+        },
+        "cEco050": {
+            "title": "ECO050"
+        },
+        "cEco101": {
+            "title": "ECO101 CONCESSIONARIA DE RODOVIAS S/A"
+        },
+        "cEcoponte": {
+            "title": "ECOPONTE"
+        },
+        "cEcoriominas": {
+            "title": "ECORIOMINAS"
+        },
+        "cEcosul": {
+            "title": "ECOSUL"
+        },
+        "cEcoviasDoAraguaia": {
+            "title": "ECOVIAS DO ARAGUAIA"
+        },
+        "cEcoviasDoCerrado": {
+            "title": "ECOVIAS DO CERRADO"
+        },
+        "cSistemaRodRioSP": {
+            "title": "RIOSP"
+        },
+        "cMsvia": {
+            "title": "MSVIA"
+        },
+        "cRodoviaDoAco": {
+            "title": "RODOVIA DO AÇO"
+        },
+        "cTransbrasiliana": {
+            "title": "TRANSBRASILIANA"
+        },
+        "cVia040": {
+            "title": "VIA 040"
+        },
+        "cViaBahia": {
+            "title": "VIA BAHIA"
+        },
+        "cViaCosteira": {
+            "title": "VIA COSTEIRA"
+        },
+        "cViaSul": {
+            "title": "VIA SUL"
+        }
+    },
+    "layers": {
+        "sedesMunicipais": {
+            "title": "Sedes Municipais",
+            "url": "",
+            "nomeLayerPostgis": "bdgeo_postgis:SEDES_MUNICIPAIS",
+            "permitirFiltroPorConcessionaria": false
+        },
+        "municipios": {
+            "title": "Municípios",
+            "url": "",
+            "nomeLayerPostgis": "bdgeo_postgis:MUNICIPIOS",
+            "permitirFiltroPorConcessionaria": false
+        },
+        "regioes": {
+            "title": "Regiões",
+            "url": "http://18.217.84.117:8080/geoserver/tiger/wms",
+            "nomeLayerPostgis": "tiger:giant_polygon",
+            "permitirFiltroPorConcessionaria": false
+        },
+        "testeCFTV": {
+            "title": "CFTV",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "urlJson": "http://192.168.56.102:8070/geoserver/sir/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=sir%3Aponto_CFTV&maxFeatures=50&outputFormat=application%2Fjson",
+            "nomeLayerPostgis": "sir:ponto_CFTV",
+            "permitirFiltroPorConcessionaria": true
+        },
+
+        "dadosdaedificacaooperacional": {
+            "title": "Edificação Operacional",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "urlJson": "http://192.168.56.102:8070/geoserver/sir/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=sir%3Aponto_EdificacaoOperacional&maxFeatures=50&outputFormat=application%2Fjson",
+            "nomeLayerPostgis": "sir:ponto_EdificacaoOperacional",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdapracasdePedagio": {
+            "title": "Praças de Pedágio",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "urlJson": "",
+            "nomeLayerPostgis": "sir:ponto_PracadePedagio",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdadeteccaoAltura": {
+            "title": "Detecção e Estação Meteorológica",
+            "url": "http://192.168.56.102:8070/geoserver/teste/wms",
+            "urlJson": "",
+            "nomeLayerPostgis": "sir:ponto_EstacaoMeteorologica",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdaSAT": {
+            "title": "SAT",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "urlJson": "",
+            "nomeLayerPostgis": "sir:ponto_SAT",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdaequipamentoPMVS": {
+            "title": "Painel de Mensagem Variavel (PMV)",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "urlJson": "",
+            "nomeLayerPostgis": "sir:ponto_PMV",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdaPRFS": {
+            "title": "Posto da PRF",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "urlJson": "http://192.168.56.102:8070/geoserver/sir/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=sir%3Aponto_PRF&maxFeatures=50&outputFormat=application%2Fjson",
+            "nomeLayerPostgis": "sir:ponto_PRF",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdoPPVS": {
+            "title": "Posto de Pesagem Veicular (PPV)",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "urlJson": "",
+            "nomeLayerPostgis": "sir:ponto_PPV",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosKmMarginal": {
+            "title": "Dados do KM Marginal",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "urlJson": "",
+            "nomeLayerPostgis": "sir:ponto_KMMarginal",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosKmPrincipal": {
+            "title": "Dados do KM Principal",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "urlJson": "",
+            "nomeLayerPostgis": "sir:ponto_KMPrincipal",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdosRadares": {
+            "title": "Radar",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "urlJson": "",
+            "nomeLayerPostgis": "sir:ponto_Radar",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdafibraotica": {
+            "title": "Fibra Ótica",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "nomeLayerPostgis": "sir:linha_FibraOtica",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdailuminacao": {
+            "title": "Dados da Iluminação",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "nomeLayerPostgis": "sir:linha_Iluminacao_XYToLine",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdoTracado": {
+            "title": "Traçado",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "nomeLayerPostgis": "sir:linha_tracado",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdoPerfildoTerreno": {
+            "title": "Perfil do Terreno",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "nomeLayerPostgis": "sir:linha_PerfilTerreno",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdosTipodePavimento": {
+            "title": "Tipo de Pavimento",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "nomeLayerPostgis": "",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdosTipodeFaixa": {
+            "title": "Tipo de Faixa",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "nomeLayerPostgis": "sir:linha_TipoFaixa",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "dadosdoUsodoSolo": {
+            "title": "Uso do Solo",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "nomeLayerPostgis": "sir:linha_UsodoSolo",
+            "permitirFiltroPorConcessionaria": true
+        },
+        "tracadoConcessoes": {
+            "title": "Traçado Concessões",
+            "url": "http://192.168.56.102:8070/geoserver/sir/wms",
+            "nomeLayerPostgis": "sir:linha_KMPrincipal",
+            "permitirFiltroPorConcessionaria": true
+        }
+
+    },
+    "rodovia_uf" : {
+        "ACRE" : {"title": "AC"},
+        "ALAGOAS" : {"title": "AL"},
+        "AMAPA" : {"title": "AP"},
+        "AMAZONAS" : {"title": "AM"},
+        "BAHIA" : {"title": "BA"},
+        "CEARA" : {"title": "CE"},
+        "DISTRITO FEDERAL" : {"title": "DF"},
+        "ESPIRITO SANTO" : {"title": "ES"},
+        "GOIAS" : {"title": "GO"},
+        "MARANHAO" : {"title": "MA"},
+        "MATO GROSSO" : {"title": "MT"},
+        "MATO GROSSO DO SUL" : {"title": "MS"},
+        "MINAS GERAIS" : {"title": "MG"},
+        "PARA" : {"title": "PA"},
+        "PARAIBA" : {"title": "PB"},
+        "PARANA" : {"title": "PR"},
+        "PERNAMBUCO" : {"title": "PE"},
+        "PIAUI" : {"title": "PI"},
+        "RIO DE JANEIRO" : {"title": "RJ"},
+        "RIO GRANDE DO NORTE" : {"title": "RN"},
+        "RIO GRANDE DO SUL" : {"title": "RS"},
+        "RONDONIA" : {"title": "RO"},
+        "RORAIMA" : {"title": "RR"},
+        "SANTA CATARINA" : {"title": "SC"},
+        "SAO PAULO" : {"title": "SP"},
+        "SERGIPE" : {"title": "SE"},
+        "TOCANTINS" : {"title": "TO"}
+
+    },
+    "rodovias" : {
+        "BR-040": { "title": "BR-040" },
+        "BR-050": { "title": "BR-050" },
+        "BR-070": { "title": "BR-070" },
+        "BR-080": { "title": "BR-080" },
+        "BR-101": { "title": "BR-101" },
+        "BR-116": { "title": "BR-116" },
+        "BR-153": { "title": "BR-153" },
+        "BR-163": { "title": "BR-163" },
+        "BR-230": { "title": "BR-230" },
+        "BR-262": { "title": "BR-262" },
+        "BR-290": { "title": "BR-290" },
+        "BR-324": { "title": "BR-324" },
+        "BR-364": { "title": "BR-364" },
+        "BR-365": { "title": "BR-365" },
+        "BR-376": { "title": "BR-376" },
+        "BR-381": { "title": "BR-381" },
+        "BR-386": { "title": "BR-386" },
+        "BR-391": { "title": "BR-381" },
+        "BR-392": { "title": "BR-392" },
+        "BR-393": { "title": "BR-393" },
+        "BR-414": { "title": "BR-414" },
+        "BR-448": { "title": "BR-448" }
+    },
+    "sentidos" : {
+        "Crescente" : {"title": "Crescente"},
+        "Decrescente" : {"title": "Decrescente"}
+    }
+}
